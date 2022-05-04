@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-算法第四版1.1习题个人解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/04/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.1%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/" class="article-date">
+  <time class="dt-published" datetime="2022-05-04T04:35:18.103Z" itemprop="datePublished">2022-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h6 id="33页1-1-3"><a href="#33页1-1-3" class="headerlink" title="33页	1.1.3"></a>33页	1.1.3</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a,b,c;</span><br><span class="line">a=b=c=<span class="number">0</span>;</span><br><span class="line">StdOut.println(<span class="string">&quot;Please enter three numbers&quot;</span>);</span><br><span class="line">a = StdIn.readInt();</span><br><span class="line">b = StdIn.readInt();</span><br><span class="line">c = StdIn.readInt();</span><br><span class="line"><span class="keyword">if</span>(a == b &amp;&amp; b == c) &#123;</span><br><span class="line">	StdOut.println(<span class="string">&quot;equal&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">	StdOut.println(<span class="string">&quot;not equal&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="33页1-1-5"><a href="#33页1-1-5" class="headerlink" title="33页	1.1.5"></a>33页	1.1.5</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> x;</span><br><span class="line"><span class="type">double</span> y;</span><br><span class="line">x = StdIn.readDouble();</span><br><span class="line">y = StdIn.readDouble();</span><br><span class="line"><span class="keyword">if</span>(<span class="number">0</span> &lt; x &amp;&amp; x &lt; <span class="number">1</span> &amp;&amp; <span class="number">0</span> &lt; y &amp;&amp; y &lt; <span class="number">1</span>) &#123;</span><br><span class="line">	StdOut.println(<span class="string">&quot;true&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">	StdOut.println(<span class="string">&quot;false&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="34页1-1-11"><a href="#34页1-1-11" class="headerlink" title="34页	1.1.11"></a>34页	1.1.11</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">boolean</span>[][] one = &#123;&#123;<span class="literal">true</span>,<span class="literal">false</span>,<span class="literal">true</span>&#125;,&#123;<span class="literal">false</span>,<span class="literal">false</span>,<span class="literal">true</span>&#125;,&#123;<span class="literal">true</span>,<span class="literal">true</span>,<span class="literal">false</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">1</span>; x &lt;= one.length; x++) &#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">1</span>; y &lt;= one[<span class="number">0</span>].length; y++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(one[x-<span class="number">1</span>][y-<span class="number">1</span>]) &#123;</span><br><span class="line">			StdOut.println(<span class="string">&quot;行号为：&quot;</span> + x + <span class="string">&quot;,列号为:&quot;</span> + y + <span class="string">&quot;数据为：&quot;</span> + <span class="string">&quot;*&quot;</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			StdOut.println(<span class="string">&quot;行号为：&quot;</span> + x + <span class="string">&quot;,列号为:&quot;</span> + y + <span class="string">&quot;数据为：&quot;</span> + <span class="string">&quot; &quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="34页1-1-13"><a href="#34页1-1-13" class="headerlink" title="34页	1.1.13"></a>34页	1.1.13</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span>[][] testList;</span><br><span class="line">	StdOut.println(<span class="string">&quot;请输入两个整数：&quot;</span>);</span><br><span class="line">	<span class="type">int</span> <span class="variable">M</span> <span class="operator">=</span> StdIn.readInt();</span><br><span class="line">	<span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> StdIn.readInt();</span><br><span class="line">	testList = MyList(M,N);</span><br><span class="line">	<span class="type">int</span>[][] testListTwo = <span class="keyword">new</span> <span class="title class_">int</span>[N][M];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span>; x &lt; N; x++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">0</span>; y &lt; M; y++) &#123;</span><br><span class="line">			testListTwo[x][y] = testList[y][x];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//随机生成二维数组</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[][] MyList(<span class="type">int</span> m, <span class="type">int</span> n)&#123;</span><br><span class="line">	<span class="type">int</span>[][] one = <span class="keyword">new</span> <span class="title class_">int</span>[m][n];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span>; x &lt; m; x++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">0</span>; y &lt; n; y++) &#123;</span><br><span class="line">			one[x][y] = StdRandom.uniform(<span class="number">10</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> one;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="34页1-1-14"><a href="#34页1-1-14" class="headerlink" title="34页	1.1.14"></a>34页	1.1.14</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">lg</span><span class="params">(<span class="type">double</span> N)</span> &#123;</span><br><span class="line">	<span class="keyword">if</span>(N &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">while</span>(sum &lt;= N) &#123;</span><br><span class="line">			count++;</span><br><span class="line">			sum *= <span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> count - <span class="number">1</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(N &gt; <span class="number">0</span>) &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">		<span class="type">double</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">1.0</span> / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">while</span>(sum &gt; N) &#123;</span><br><span class="line">			count--;</span><br><span class="line">			sum /= <span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> count;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="34页1-1-15"><a href="#34页1-1-15" class="headerlink" title="34页	1.1.15"></a>34页	1.1.15</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] histogram(<span class="type">int</span>[] a, <span class="type">int</span> M) &#123;</span><br><span class="line">	<span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> a.length;</span><br><span class="line">	<span class="type">int</span>[] array = <span class="keyword">new</span> <span class="title class_">int</span>[M];</span><br><span class="line">	<span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; M; i++) &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; length; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(a[j] == i) &#123;</span><br><span class="line">				count++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		number += count;</span><br><span class="line">		array[i] = count;</span><br><span class="line">		<span class="keyword">if</span>(number == length) &#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="36页1-1-31"><a href="#36页1-1-31" class="headerlink" title="36页	1.1.31"></a>36页	1.1.31</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//画圆</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">drawRic</span><span class="params">()</span> &#123;</span><br><span class="line">	StdDraw.setXscale(<span class="number">0</span>, <span class="number">100</span>);</span><br><span class="line">	StdDraw.setYscale(<span class="number">0</span>, <span class="number">100</span>);</span><br><span class="line">	StdDraw.setPenRadius(<span class="number">0.01</span>);</span><br><span class="line">	StdDraw.setPenColor(StdDraw.BLACK);</span><br><span class="line">	StdDraw.circle(<span class="number">50</span>, <span class="number">50</span>, <span class="number">50</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//画点</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Position[] drawPoint(<span class="type">int</span> n) &#123;</span><br><span class="line">	StdDraw.setPenRadius(<span class="number">0.05</span>);</span><br><span class="line">	StdDraw.setPenColor(StdDraw.RED);</span><br><span class="line">	StdDraw.point(<span class="number">0</span>, <span class="number">50</span>);</span><br><span class="line">	Position[] position = <span class="keyword">new</span> <span class="title class_">Position</span>[n];</span><br><span class="line">	position[<span class="number">0</span>] = <span class="keyword">new</span> <span class="title class_">Position</span>(<span class="number">0</span>, <span class="number">50</span>);</span><br><span class="line">	<span class="type">double</span> <span class="variable">angle</span> <span class="operator">=</span> <span class="number">2</span> * Math.PI / n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= n-<span class="number">1</span>; i++) &#123;</span><br><span class="line">		<span class="type">double</span> <span class="variable">angle_two</span> <span class="operator">=</span> angle * i;</span><br><span class="line">		<span class="type">double</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">50</span> - <span class="number">50</span> * Math.cos(angle_two);</span><br><span class="line">		<span class="type">double</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">50</span> + <span class="number">50</span> * Math.sin(angle_two);</span><br><span class="line">		StdDraw.setPenRadius(<span class="number">0.05</span>);</span><br><span class="line">		StdDraw.setPenColor(StdDraw.RED);</span><br><span class="line">		StdDraw.point(x, y);</span><br><span class="line">		position[i] = <span class="keyword">new</span> <span class="title class_">Position</span>(x, y);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> position;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//概率连线</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">createLine</span><span class="params">(Position[] position, <span class="type">double</span> p)</span> &#123;</span><br><span class="line">	<span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> position.length;</span><br><span class="line">	StdDraw.setPenRadius(<span class="number">0.01</span>);</span><br><span class="line">	StdDraw.setPenColor(StdDraw.GREEN);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i+<span class="number">1</span> ; j &lt; length; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(StdRandom.bernoulli(p)) &#123;</span><br><span class="line">				StdDraw.line(position[i].getX(), position[i].getY(), position[j].getX(), position[j].getY());</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="36页1-1-33"><a href="#36页1-1-33" class="headerlink" title="36页	1.1.33"></a>36页	1.1.33</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Matrix</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//向量点乘</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">double</span> <span class="title function_">dot</span><span class="params">(<span class="type">double</span>[] x, <span class="type">double</span>[] y)</span> &#123;</span><br><span class="line">		<span class="type">double</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> x.length;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">			sum += x[i] * y[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> sum;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//矩阵和矩阵之积</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">double</span>[][] mult(<span class="type">double</span>[][] a, <span class="type">double</span>[][] b)&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> a.length;</span><br><span class="line">		<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> b[<span class="number">0</span>].length;</span><br><span class="line">		<span class="type">double</span>[][] result = <span class="keyword">new</span> <span class="title class_">double</span>[x][y];</span><br><span class="line">		<span class="type">double</span>[][] tansA = transpose(b);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; x; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; y; j++) &#123;</span><br><span class="line">				result[i][j] = dot(a[i], tansA[j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//转置矩阵</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">double</span>[][] transpose(<span class="type">double</span>[][] a)&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> a.length;</span><br><span class="line">		<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> a[<span class="number">0</span>].length;</span><br><span class="line">		<span class="type">double</span>[][] result = <span class="keyword">new</span> <span class="title class_">double</span>[y][x];</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; y; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; x; j++) &#123;</span><br><span class="line">				result[i][j] = a[j][i];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//矩阵和向量之积</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">double</span>[] mult(<span class="type">double</span>[][] a, <span class="type">double</span>[] x) &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> a.length;</span><br><span class="line">		<span class="type">double</span>[] result = <span class="keyword">new</span> <span class="title class_">double</span>[length];</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">			result[i] = dot(a[i], x); </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//向量和矩阵之积</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">double</span>[] mult(<span class="type">double</span>[] y, <span class="type">double</span>[][] a) &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> a[<span class="number">0</span>].length;</span><br><span class="line">		<span class="type">double</span>[] result = <span class="keyword">new</span> <span class="title class_">double</span>[length];</span><br><span class="line">		<span class="type">double</span>[][] tansA = transpose(a);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">			result[i] = dot(y, tansA[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/04/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.1%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/" data-id="cl2r559ob00037cumc17h7uxn" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-计算网络自顶向下" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/04/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-05-04T04:35:18.099Z" itemprop="datePublished">2022-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="1-1-1-因特网具体构成描述"><a href="#1-1-1-因特网具体构成描述" class="headerlink" title="1.1.1 因特网具体构成描述"></a>1.1.1 因特网具体构成描述</h5><p>当前分组交换机最著名的类型是<strong>路由器</strong>和<strong>链路层交换机</strong>；</p>
+<p>因特网服务提供商（Internet Service Provider, ISP）；</p>
+<p>传输控制协议（Transmission Control Protocol, TCP）；</p>
+<p>网际协议（Internet Protocol, IP）；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/04/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B/" data-id="cl2r559o900027cumeq2ogi3u" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Typora_demo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/04/Typora_demo/" class="article-date">
+  <time class="dt-published" datetime="2022-05-04T04:35:18.095Z" itemprop="datePublished">2022-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="Typora的部分基础用法"><a href="#Typora的部分基础用法" class="headerlink" title="Typora的部分基础用法"></a>Typora的部分基础用法</h2><p>仅供参考！</p>
+<p>[toc]</p>
+<h1 id="Start（区域元素）"><a href="#Start（区域元素）" class="headerlink" title="Start（区域元素）"></a>Start（区域元素）</h1><h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><p>输入[toc]，按下换行，产生标题，自动更新</p>
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>按下换行建立新的一行</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>#表示开始，一共有六个级别（标题），#的个数表示各个级别，#后加空格加文字，换行结束</p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><h4 id="-3"><a href="#-3" class="headerlink" title=""></a></h4><h5 id="-4"><a href="#-4" class="headerlink" title=""></a></h5><h6 id="-5"><a href="#-5" class="headerlink" title=""></a></h6><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>以&gt;开头，后加文字，换行下一行，双击换行跳出</p>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<h2 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h2><h3 id="有序序列"><a href="#有序序列" class="headerlink" title="有序序列"></a>有序序列</h3><p>以1.开头，后加文字，创建有序序列</p>
+<h3 id="无序序列"><a href="#无序序列" class="headerlink" title="无序序列"></a>无序序列</h3><p>以*或+或-开头，后加文字，创建无序序列，换行下一行，shift+tab跳出</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>以&#96;&#96;&#96;开头，加上语言名开启代码块，换行下一行，下键跳出</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;效果&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="数学块"><a href="#数学块" class="headerlink" title="数学块"></a>数学块</h2><p>以$$开头，换行创建输入区域<br>$$<br>V1 * V2 &#x3D; ?<br>$$</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>类似|one|two|的形式，换行创建</p>
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>在文字后使用[^]，^后加文字，然后添加信息</p>
+<p>示例<a href="%E8%BF%99%E4%B8%AA%E5%B0%B1%E6%98%AF%E8%84%9A%E6%B3%A8%EF%BC%9B">^demo</a></p>
+<h2 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h2><p>输入***或—，换行创建</p>
+<hr>
+<h1 id="Next（特征元素）"><a href="#Next（特征元素）" class="headerlink" title="Next（特征元素）"></a>Next（特征元素）</h1><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>[]里添加超链接文字，后面加()里面定义链接</p>
+<p>点击百度跳转：<a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ol>
+<li>手动添加，类似链接，前面加上！</li>
+<li>直接拖动鼠标进去，然后鼠标点击图片修改</li>
+</ol>
+<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>用* *或者_括住</p>
+<p>试试</p>
+<p><em>试试</em></p>
+<h2 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h2><p>用** **括住</p>
+<p>试试</p>
+<p><strong>试试</strong></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>用~~ ~~括住</p>
+<p>试试</p>
+<p><del>试试</del></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>使用HTML标签<u></u></p>
+<p>试试</p>
+<p><u>试试</u></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>用&#96;&#96;括住在正常段落表示代码</p>
+<p>比如<code>main()</code>这样</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/04/Typora_demo/" data-id="cl2r559o100007cum9h9egmsy" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/04/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2022-05-04T04:31:26.020Z" itemprop="datePublished">2022-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/04/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/04/hello-world/" data-id="cl2r559o700017cum91t30k5t" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/04/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.1%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/04/%E8%AE%A1%E7%AE%97%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/04/Typora_demo/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
