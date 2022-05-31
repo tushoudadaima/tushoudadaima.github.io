@@ -152,6 +152,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-算法第四版1.2习题个人解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/31/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.2%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/">算法第四版1.2习题个人解</a>
+    </h1>
+  
+
+        
+        <a href="/2022/05/31/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.2%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2022-05-31T01:36:26.061Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="71页1-2-1"><a href="#71页1-2-1" class="headerlink" title="71页	1.2.1"></a>71页	1.2.1</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先设置x,y范围，后draw</span></span><br><span class="line">StdOut.println(<span class="string">&quot;请输入整数n&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> StdIn.readInt();</span><br><span class="line"><span class="type">double</span> <span class="variable">distance</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line">Point2D[] points = <span class="keyword">new</span> <span class="title class_">Point2D</span>[n];</span><br><span class="line">StdDraw.setXscale(<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">StdDraw.setYscale(<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">StdDraw.setPenRadius(<span class="number">0.01</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">	<span class="type">Point2D</span> <span class="variable">point</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Point2D</span>(StdRandom.uniform(),StdRandom.uniform());</span><br><span class="line">	point.draw();</span><br><span class="line">	points[i] = point;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i + <span class="number">1</span>; j &lt; n; j++) &#123;</span><br><span class="line">		<span class="type">double</span> <span class="variable">dist</span> <span class="operator">=</span> points[i].distanceTo(points[j]);</span><br><span class="line">		distance = dist &gt; distance ? distance : dist;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">StdOut.println(distance);</span><br></pre></td></tr></table></figure>
+
+<h6 id="71页1-2-3"><a href="#71页1-2-3" class="headerlink" title="71页	1.2.3"></a>71页	1.2.3</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">StdOut.println(<span class="string">&quot;请输入整数N,实数min和max:&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> StdIn.readInt();</span><br><span class="line"><span class="type">double</span> <span class="variable">min</span> <span class="operator">=</span> StdIn.readDouble();</span><br><span class="line"><span class="type">double</span> <span class="variable">max</span> <span class="operator">=</span> StdIn.readDouble();</span><br><span class="line">StdDraw.setXscale(<span class="number">0</span>, <span class="number">1</span>);</span><br><span class="line">StdDraw.setYscale(<span class="number">0</span>, <span class="number">1</span>);</span><br><span class="line">StdDraw.setPenRadius(<span class="number">0.01</span>);</span><br><span class="line">Interval2D[] interval = <span class="keyword">new</span> <span class="title class_">Interval2D</span>[N];</span><br><span class="line"><span class="comment">//interval1D第一个参数小于第二个</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">	<span class="type">double</span> <span class="variable">one</span> <span class="operator">=</span> StdRandom.uniform(min, max);</span><br><span class="line">	<span class="type">double</span> <span class="variable">two</span> <span class="operator">=</span> StdRandom.uniform(min, max);</span><br><span class="line">	one = one &gt; two ? two : one;</span><br><span class="line">	<span class="type">double</span> <span class="variable">three</span> <span class="operator">=</span> StdRandom.uniform(min, max);</span><br><span class="line">	<span class="type">double</span> <span class="variable">four</span> <span class="operator">=</span> StdRandom.uniform(min, max);</span><br><span class="line">	three = three &gt; four ? four : three;</span><br><span class="line">	<span class="type">Interval2D</span> <span class="variable">interval2D</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Interval2D</span>(<span class="keyword">new</span> <span class="title class_">Interval1D</span>(one, two), <span class="keyword">new</span> <span class="title class_">Interval1D</span>(three, four));</span><br><span class="line">	interval2D.draw();</span><br><span class="line">	interval[i] = interval2D;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//相交数量略</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="71页1-2-6"><a href="#71页1-2-6" class="headerlink" title="71页	1.2.6"></a>71页	1.2.6</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//回环变位问题</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">checkIf</span><span class="params">(String s, String t)</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> (s.length() == t.length()) &amp;&amp; ((t + t).indexOf(s) &gt;= <span class="number">0</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/05/31/%E7%AE%97%E6%B3%95%E7%AC%AC%E5%9B%9B%E7%89%881.2%E4%B9%A0%E9%A2%98%E4%B8%AA%E4%BA%BA%E8%A7%A3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-算法第四版1.1习题个人解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -369,81 +437,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2022/05/04/Typora_demo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2022/05/04/hello-world/" class="archive-article-date">
-  	<time datetime="2022-05-04T04:31:26.020Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/05/04/hello-world/">展开全文 >></a>
         </p>
       
 
